@@ -1,0 +1,37 @@
+.Pricingsectiondata {
+  width: var(--default-width);
+  margin-left: var(--side-padding);
+  margin-right: var(--side-padding);
+  text-align: center;
+  margin-top: 50px;
+}
+.Pricingsectiondata h2 span {
+  color: var(--secondary-color);
+}
+.Pricing-heading {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: var(--heading-top-space);
+  margin-bottom: var(--heading-bottom-space);
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+ 
+  .Pricingsectiondata {
+    width: 90%;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
+  }
+}
+@media (max-width: 768px) {
+
+  .Pricingsectiondata {
+    width: 90%;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
+    
+  }
+  
+}

@@ -1,0 +1,271 @@
+:root {
+  --primary-color: #334eac;
+  --primary-transparent-color: #334dac2e;
+  --secondary-transparent-color: #334dac80;
+  --black-transparent-color: #000000ac;
+  --secondary-color: #081f5c;
+  --tertiory-color: #1f007d;
+  --accent-color: #f78f08;
+  --warning-color: #fb2a54;
+  --white-color: #ffffff;
+  --grey-color: #ededed;
+  --dark-grey-color: #adadad;
+  --black-color: #000000;
+  --horizontal-gradient: linear-gradient(to right, #334eac, #081f5c);
+  --vertical-gradient: linear-gradient(to bottom, #334eac, #081f5c);
+  --background-blackScreen: linear-gradient(to bottom, #ffffff00, #000000ac);
+  --border-radius: 20px;
+  --border-radius-secondary: 8px;
+  --default-p-size: 14px;
+  --all-side-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.733);
+  --all-side-box-shadow2: 0px 0px 3px #334eac;
+  --fontsize-heading: 40px;
+  --fontsize-heading-responsive: 30px;
+  --space-bellow-hero-section: 88px;
+  --default-width: 90%;
+  --side-padding: 5%;
+  --margin-below-cards: 50px;
+  --heading-top-space: 50px;
+  --heading-bottom-space: 30px;
+  --span-heading-space: 33px;
+  --heading-font: 24px;
+  --avatar: 106px;
+  --card-p-size: 16px;
+  --hero-section-heading: 76px;
+  --hero-section-description: 18px;
+  --hero-section-height: 500px;
+   --hero-section-height2: 200px;
+  --service-card-height: 445px;
+  --service-card-img-height: 230px;
+  --service-card-p-height: 150px;
+  --team-background-height: 500px;
+}
+.whatsappimg{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  z-index: 5;
+}
+@media (max-width: 1000px) {
+  :root {
+    --fontsize-heading: 30px;
+    --default-width: 90%;
+    --side-padding: 5%;
+    --margin-below-cards: 50px;
+    --heading-top-space: 0px;
+    --heading-bottom-space: 18px;
+    --span-heading-space: 33px;
+
+    --heading-font: 18px;
+    --hero-section-heading: 40px;
+    --hero-section-description: 14px;
+    --hero-section-height: 435px;
+    --service-card-height: 365px;
+    --service-card-img-height: 159px;
+    --service-card-p-height: 140px;
+    --card-p-size: 14px;
+
+    --team-background-height: 400px;
+  }
+}
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: var(--border-radius-secondary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling effect */
+}
+
+.secondary-button:hover {
+  transform: scale(1.02);
+  box-shadow: var(--all-side-box-shadow);
+  background-color: var(--primary-color);
+}
+.page-heading-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--heading-top-space);
+
+}
+.page-heading-area p {
+  margin: 0%;
+  padding: 0%;
+  font-size: var(--heading-font);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .oops-text {
+    font-size: 100px;
+    font-weight: bold;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/038/113/169/small/ai-generated-colorful-space-galaxy-cloud-nebula-ai-generated-photo.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .not-found-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .home-button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    background-color: #004bcc;
+  }
+
+
+
+  .pagination-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3vh;
+    gap: 10px;
+}
+.prev-btn ,.next-btn{
+    background: var(--vertical-gradient);
+    color: var(--white-color);
+    padding: 10px;
+    font-size: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling effect */
+}
+
+.prev-btn:hover ,.next-btn:hover{
+  transform: scale(1.05); 
+
+}
+  .dott.Active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    box-shadow:var(--all-side-box-shadow);
+  }
+  .dott{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: var(--primary-transparent-color);
+    box-shadow:var(--all-side-box-shadow2);
+  }
+  .upper-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--span-heading-space);
+  justify-content: space-between;
+  align-items: center;
+}
+.upper-section h1 {
+  font-size: var(--fontsize-heading);
+  font-weight: 700;
+  line-height: 1;
+  width: 50%;
+}
+.upper-section p {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0%;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling effect */
+  cursor: pointer;
+}
+
+.upper-section p:hover {
+  transform: scale(1.02);
+  color: var(--primary-color);
+}
+
+.upper-section h1 span {
+  color: var(--secondary-color);
+}
+.breadcrumb {
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: var(--background-color);
+}
+
+.breadcrumb li::after {
+  content: "|";
+  margin-left: 8px;
+  color: var(--background-color);
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.breadcrumb a {
+  color: var(--headings-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--shadow-low3);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .upper-section h1 {
+    width: 80%;
+    font-size: var(--fontsize-heading-responsive);
+  }
+  .upper-section p {
+    width: 20%;
+  }
+}

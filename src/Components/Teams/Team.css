@@ -1,0 +1,64 @@
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 20px;
+  width: var(--default-width);
+   margin-left: var(--side-padding);
+  margin-right: var(--side-padding);
+}
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: var(--all-side-box-shadow);
+  padding: 20px;
+  text-align: center;
+  flex: 0 0 calc(20% - 40px);
+  width: 220px;
+  
+  transition: transform 0.3s ease-in-out;
+}
+
+.Teams-section-data {
+  width: var(--default-width);
+  margin-left: var(--side-padding);
+  margin-right: var(--side-padding);
+  text-align: center;
+  margin-top: 50px;
+}
+.Teams-section-data h2 span {
+  color: var(--secondary-color);
+}
+.Team-heading {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: var(--heading-top-space);
+  margin-bottom: var(--heading-bottom-space);
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .team-container {
+    grid-template-columns: repeat(4, 1fr); /* 2 cards per row on mobile */
+  }
+  .Teams-section-data {
+    width: 90%;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
+  }
+}
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+    margin-bottom: 30px;
+  }
+  .Teams-section-data {
+    width: 90%;
+    margin-left: var(--side-padding);
+    margin-right: var(--side-padding);
+    
+  }
+  
+}
