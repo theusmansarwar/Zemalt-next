@@ -1,5 +1,5 @@
 // import Marquee from "../components/Marquee/Marquee";
-import HeroSection from "../components/HeroSection/HeroSection";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Services from "../Components/ServicesSection/Services";
@@ -8,6 +8,7 @@ import Testimonial from "../Components/TestimonialSection/Testimonial";
 import BlogSection from "../Components/BlogSection/BlogSection";
 import Marquee from "../Components/Marquee/Marquee";
 import GetintouchSection from "../Components/GetinTouchSection/GetintouchSection";
+import HeroSection from "../Components/HeroSection/HeroSection";
 
 
 const HomePage = () => {
