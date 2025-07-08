@@ -136,12 +136,12 @@ const GetintouchSection = () => {
 
           <div className="radio-group-grid">
             {[
-              "Penetration Testing",
-              "Cloud Security",
-              "Network Security",
-              "Managed Security",
-              "Cyber Consultation",
-              "General Inquiry",
+              "SEO",
+              "Web Development",
+              "UI/UX Designing",
+              "Google Ads",
+              "Social Media Ads",
+              "Content Writing",
             ].map((subject) => {
               const id = subject.toLowerCase().replace(/\s+/g, "-");
               return (
